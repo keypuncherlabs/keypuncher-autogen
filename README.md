@@ -11,11 +11,21 @@ This repository serves as a starter template for Autogen projects. It is designe
    $ python -m venv venv
    $ source venv/bin/activate  # For Windows use `venv\Scripts\activate`
 
-2. **Environment Variables**
+2. **Install Dependencies**
+    Install the required packages including Autogen using pip:
+
+    ```bash
+    pip install -r requirements.txt
+    # Ensure autogen is included in the requirements.txt file
+    # If not, you can install it directly using:
+    pip install pyautogen
+    ```
+
+3. **Environment Variables**
 
   Create a .env file in the root of your project to store sensitive keys and secrets, which should never be committed to your repository.
 
-3. **Running the Application**
+4. **Running the Application**
 
   To run the application, execute the main.py script:
 
