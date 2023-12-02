@@ -8,7 +8,7 @@ def main():
     user_proxy_agent = UserProxyAgent()
 
     # Create the prompt using the utility function
-    prompt = Utils.create_prompt('generate_random_numbers.txt')
+    prompt = Utils.create_prompt('fetch_weather.txt')
 
     if prompt:
         # Initiate chat with Autogen

@@ -162,4 +162,3 @@ cython_debug/
 # Autogen
 /generated
 /prompts
-main.py
