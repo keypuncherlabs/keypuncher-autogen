@@ -1,0 +1,5 @@
+### General Instructions
+1. Save the generated code to disk, put # filename: <filename> inside the code block as the first line.  Then run the saved file in order to test the output.
+2. Use load_dotenv to fetch local environment variables if instructed.
+3. Be sure to import required modules referenced in the generated code first, such as 'os' which is required to retrieve environment variables and should be included in all files.
+4. Do not store the output for any functions to .txt file or any other type of file, unless specifically instructed to.
