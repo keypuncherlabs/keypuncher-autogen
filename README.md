@@ -4,12 +4,13 @@ This repository serves as a starter template for Autogen projects. It is designe
 
 ## Getting Started
 
-1. **Setup Python Environment**  
-   Ensure you have Python installed on your system. It's recommended to use a virtual environment:
+1. **Setup Python Environment with Conda**  
+   Ensure you have [Conda](https://docs.conda.io/projects/conda/en/latest/user-guide/install/index.html) installed on your system. Set up a Conda environment using:
 
    ```bash
-   $ python -m venv venv
-   $ source venv/bin/activate  # For Windows use `venv\Scripts\activate`
+   conda create --name keypuncher-autogen python=3.11.5
+   conda activate keypuncher-autogen
+   ```
 
 2. **Install Dependencies**  
    Install the required packages including Autogen using pip:
@@ -28,7 +29,7 @@ This repository serves as a starter template for Autogen projects. It is designe
    To run the application, execute the main.py script:
 
    ```bash
-   $ python main.py
+   python main.py
    ```
 
 # Adding Prompts
