@@ -1,4 +1,4 @@
-# Keypuncher Autogen Project Starter
+# Keypuncher Autogen
 
 This repository serves as a starter template for Autogen projects. It is designed to be a base from which you can quickly bootstrap new Autogen projects to run on local systems. It is structured to ensure ease of use and scalability without containing any keys or secrets.
 
