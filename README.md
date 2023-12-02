@@ -32,12 +32,36 @@ This repository serves as a starter template for Autogen projects. It is designe
    python main.py
    ```
 
-# Adding Prompts
+## Adding Prompts
 
 **To add a new prompt:**
 
   Create a new .txt file in the /prompts directory with your prompt content.
   Ensure the main.py or respective agent scripts reference the new prompt file.
+
+## Caching
+
+Caching in Autogen is used to speed up the generation process by storing some of the results and intermediate data. This allows Autogen to retrieve data quickly without regenerating it, which is especially beneficial when working with large datasets or complex generation tasks.
+
+### How Caching Works
+
+Autogen typically uses a combination of in-memory and on-disk caching strategies. In-memory caching is ephemeral and lasts only for the duration of the program execution. On-disk caching saves data between sessions, which is where the generated files are often stored.
+
+### Clearing the Cache
+
+To clear the cache in Autogen, you have two primary methods:
+
+1. **Update the Seed Variable**  
+   If your Autogen configuration includes a seed variable (like the `seed` key in the `llm_config`), changing this variable can effectively invalidate the cache. For example, changing the seed from `41` to another number will cause Autogen to regenerate data since it alters the generation process.
+
+2. **Delete the Cache Directory Manually**
+   Autogen may store cache files in a specific directory. To clear the cache, you can delete this directory. Ensure you close any running Autogen processes before doing so to prevent errors. The location of this directory depends on your specific Autogen setup, but you can typically find it in the generated directory or a .cache directory.
+
+   ```bash
+   rm -rf .cache/*     # If cache is stored in a '.cache' directory, use this command
+
+   rm -rf generated/*  # This command deletes all cached files in the 'generated' directory
+   ```
 
 ## Running on Local Systems
 This project is designed to run locally. Follow the setup steps in the 'Getting Started' section above to ensure the application is configured correctly on your system.
