@@ -23,8 +23,7 @@ def main():
             assistant_agent.assistant, message=prompt)
 
         # Handle the chat response
-        # Note: Implement a loop or logic to handle ongoing interaction
-        # depending on how your Autogen system is set up.
+        # Note: Implement a loop or logic to handle ongoing interaction depending on how your Autogen system is set up.
         # print("Autogen Response: ", response)
 
 
