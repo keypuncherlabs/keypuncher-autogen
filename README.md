@@ -43,11 +43,11 @@ This repository serves as a starter template for Autogen projects. It is designe
 
 Caching in Autogen is used to speed up the generation process by storing some of the results and intermediate data. This allows Autogen to retrieve data quickly without regenerating it, which is especially beneficial when working with large datasets or complex generation tasks.
 
-### How Caching Works
+#### How Caching Works
 
 Autogen typically uses a combination of in-memory and on-disk caching strategies. In-memory caching is ephemeral and lasts only for the duration of the program execution. On-disk caching saves data between sessions, which is where the generated files are often stored.
 
-### Clearing the Cache
+#### Clearing the Cache
 
 To clear the cache in Autogen, you have two primary methods:
 
