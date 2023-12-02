@@ -1,0 +1,1 @@
+Write a Python script that generates 100 random whole numbers. Each number should be between 1 and 1000. Print the numbers to the console.
