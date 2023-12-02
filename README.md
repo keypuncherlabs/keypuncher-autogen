@@ -32,6 +32,12 @@ This repository serves as a starter template for Autogen projects. It is designe
    python main.py
    ```
 
+   Or specify the prompt: (replace your_prompt_file.txt with the name of your prompt file located in the /prompts directory)
+
+   ```bash
+   python main.py your_prompt_file.txt
+   ```
+
 ## Adding Prompts
 
 **To add a new prompt:**
