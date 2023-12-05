@@ -1,6 +1,8 @@
 import argparse
 from agents.assistant_agent import AssistantAgent
 from agents.user_proxy_agent import UserProxyAgent
+from agents.retrieve_assistant_agent import RetrieveAssistantAgent
+from agents.retrieve_user_proxy_agent import RetrieveUserProxyAgent
 from utils.utils import Utils
 
 
@@ -13,8 +15,14 @@ def main():
 
     assistant_agent = AssistantAgent()
     user_proxy_agent = UserProxyAgent()
+    retrieve_assistant_agent = RetrieveAssistantAgent()
+    retrieve_user_proxy_agent = RetrieveUserProxyAgent()
 
-    # Create the prompt using the utility function
+    retrieve_assistant_agent.assistant.reset()
+    retrieve_user_proxy_agent.ragproxyagent.initiate_chat(
+        retrieve_assistant_agent.assistant, problem="What is Keypuncher Autogen?")
+
+    # # Create the prompt using the utility function
     prompt = Utils.create_prompt(args.prompt_file)
 
     if prompt:
