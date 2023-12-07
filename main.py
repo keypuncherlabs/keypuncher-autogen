@@ -18,9 +18,9 @@ def main():
     retrieve_assistant_agent = RetrieveAssistantAgent()
     retrieve_user_proxy_agent = RetrieveUserProxyAgent()
 
-    retrieve_assistant_agent.assistant.reset()
-    retrieve_user_proxy_agent.ragproxyagent.initiate_chat(
-        retrieve_assistant_agent.assistant, problem="What is Keypuncher Autogen?")
+    # Query a local document
+    # retrieve_assistant_agent.assistant.reset()
+    # retrieve_user_proxy_agent.ragproxyagent.initiate_chat(retrieve_assistant_agent.assistant, problem="What is Keypuncher Autogen?")
 
     # # Create the prompt using the utility function
     prompt = Utils.create_prompt(args.prompt_file)
