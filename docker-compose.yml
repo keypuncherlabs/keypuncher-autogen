@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  keypuncher-autogen:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: keypuncher-autogen
+    volumes:
+      - ./:/app
+      - ./prompts:/app/prompts
+      - ./generated:/generated
+    command: ["python", "main.py"]
